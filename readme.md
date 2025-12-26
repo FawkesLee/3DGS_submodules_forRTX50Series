@@ -20,6 +20,7 @@ Under the premise that the CUDA version within the system is relatively new, it 
 | **Python** | 3.10 - 3.12 |
 
 > ⚠️ **Note**: PyTorch 2.9 has known compatibility issues with MSVC 14.44+ due to `std` namespace conflicts in `compiled_autograd.h`. Use PyTorch 2.7.0 for stable compilation. The command of installation is `pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128`
+> 
 > Besides, if you need to install `torch-scatter` or `pytorch-scatter`, just put `pip install torch-scatter -f https://data.pyg.org/whl/torch-2.7.0+cu128.html` in the command line.
 
 # How to Use
