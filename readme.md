@@ -97,7 +97,7 @@ python -c "import simple_knn; print('simple_knn OK')"
 
 | Error | Cause | Solution |
 |-------|-------|----------|
-| `std: ambiguous symbol` | PyTorch 2.9 + MSVC 14.44+ incompatibility | Use PyTorch 2.5.1 |
+| `std: ambiguous symbol` | PyTorch 2.9 + MSVC 14.44+ incompatibility | Use PyTorch 2.7.0 |
 | `CUDA version mismatch` | System CUDA differs from PyTorch CUDA | Patch setup.py to skip version check |
 | `sm_120 not supported` | Blackwell arch not in PyTorch | Set `TORCH_CUDA_ARCH_LIST=9.0` |
 | `ModuleNotFoundError: torch` | Build isolation enabled | Use `--no-build-isolation` |
